@@ -1,0 +1,98 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: rgb(168, 106, 44);
+$secondary-color: orange;
+$font-style: italic;
+$list-style-type: none;
+$display: flex;
+$flex-direction: row;
+$justify-content: space-between;
+$width-l: 70%;
+$margin: 50px;
+$margin-xs: 10px;
+$center: center;
+$margin-xxl: 400px;
+$text-shadow: 5px 5px 10px grey;
+$primary-bg: to bottom, lightblue, rgb(243, 170, 243);
+$border-style: 3px dotted;
+$border-radius-xl: 20px;
+$bold: bold;
+$around: space-around;
+
+
+body {
+	font: 100% $font-stack;
+	color: $primary-color;
+    background-image: linear-gradient($primary-bg);
+}
+h1 {
+    color: $secondary-color;
+    font-style: $font-style;
+    margin-left: $margin-xxl;
+    margin-bottom: $margin;
+    border: $border-style $secondary-color;
+    border-radius: $border-radius-xl;
+    width: 13%;
+    padding: 10px;
+
+}
+li {
+    list-style-type: $list-style-type;
+}
+.navigation {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    width: $width-l;
+    margin-bottom: $margin;
+    }
+
+a {
+    text-decoration: none;
+}
+
+.photos-1 {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $around;
+    margin-bottom: $margin;
+
+}
+.description {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $around;
+    margin-bottom: $margin;
+    font-weight: $bold;
+    
+    }
+
+p {
+    width: 25%;
+    border: $border-style $primary-color;
+    border-radius: 10px;
+    padding: 5px;
+}
+.buttons {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $around;
+    margin-bottom: $margin;
+}
+.buttons__design {
+    width: 100px;
+    height: 50px;
+    font-weight: $bold;
+    border: $border-style rgb(243, 170, 243);
+    border-radius: $border-radius-xl;
+    color: $secondary-color;
+    font-size: large;
+    box-shadow: 5px 5px;
+    margin-bottom: $margin;
+}
+.buttons__design:hover {
+    background-color: rgb(164, 221, 235);
+}
+#bottom {
+    border: none;
+    margin-left: 29px;
+}
